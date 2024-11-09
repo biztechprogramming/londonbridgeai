@@ -4,13 +4,13 @@ FROM node:20-alpine AS builder
 WORKDIR /app
 
 # Copy package files
-COPY london-bridge/package*.json ./
+COPY package*.json ./
 
 # Install dependencies
 RUN npm ci
 
 # Copy the rest of the application code
-COPY london-bridge/ .
+COPY . .
 
 # Build the application
 RUN npm run build
