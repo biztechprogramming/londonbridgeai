@@ -15,6 +15,7 @@ RUN npm ci
 
 # Copy the rest of the application code
 COPY . .
+RUN rm -rf node_modules
 
 # Build the application
 RUN npm run build
@@ -49,4 +50,4 @@ EXPOSE 3000
 ENV PORT 3000
 
 # Start the application
-CMD ["./node_modules/.bin/next", "start"]
+CMD ["npm", "start"]
