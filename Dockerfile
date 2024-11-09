@@ -17,6 +17,8 @@ RUN npm ci
 COPY . .
 RUN rm -rf node_modules
 
+RUN npm install
+
 # Build the application
 RUN npm run build
 
