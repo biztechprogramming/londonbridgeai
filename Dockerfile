@@ -1,6 +1,10 @@
 # Stage 1: Building the application
 FROM node:20-alpine AS builder
 
+# Add build argument for OpenAI API key
+ARG OPENAI_API_KEY
+ENV OPENAI_API_KEY=$OPENAI_API_KEY
+
 WORKDIR /app
 
 # Copy package files
