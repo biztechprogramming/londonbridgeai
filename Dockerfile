@@ -49,4 +49,4 @@ EXPOSE 3000
 ENV PORT 3000
 
 # Start the application
-CMD ["npm", "start"]
+CMD ["./node_modules/.bin/next", "start"]
