@@ -83,7 +83,7 @@ export default function Home() {
     <div className="grid min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col items-center text-center max-w-6xl mx-auto">
         <h1 className="text-4xl sm:text-6xl font-bold mb-6">
-          Discover London Bridge
+          London Bridge AI
         </h1>
         <p className="text-xl sm:text-2xl mb-12 max-w-3xl">
           Experience the majesty of one of London&apos;s most iconic landmarks
